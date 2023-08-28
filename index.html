@@ -27,12 +27,8 @@
                 <p>
                   At CMU, as a master's student and as a research staff, I have developed CV/ML solutions for medical robotics as well as 
                   e-waste recycling. My <a href="https://www.ri.cmu.edu/publications/improving-robotic-ultrasound-ai-using-optical-flow/">master's thesis</a> was on automating robotic ultrasound systems and 
-                  improving ultrasound imaging using deep learning methods.
-                  I developed an NN-based 2D soft-body simulator for simulating ultrasound images at different force values. I also developed 
-                  unsupervised deformable registration for predicting the movement and deformation of vessels in ultrasound images.
-                  For e-waste recycling, I developed algorithms in the area of fine-grained image classification, 2D/3D semantic segmentation, 3D reconstruction 
-                  and robotic manipulation. 
-                  My other projects also encompassed topics like novel view synthesis using NeRF and 6D pose estimation using images.
+                  improving ultrasound imaging using deep learning methods. I have also worked on the topics of fine-grained image classification, 2D/3D semantic segmentation, 3D reconstruction, 
+                  novel view synthesis using NeRF, 6D pose estimation using images, and robotic manipulation.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -45,7 +41,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/FNUAbhimanyu.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/FNUAbhimanyu.jpg" class="hoverZoomLink"></a>
+                <a href="images/FNUAbhimanyu.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/FNUAbhimanyu.png" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -92,7 +88,7 @@
           </tr>
         </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <h2>Projects</h2>
+            <h2>Selected Projects</h2>
     
       <tr onmouseout="uraft_stop()" onmouseover="uraft_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -140,13 +136,13 @@
       
 
       <tr onmouseout="phyugen_stop()" onmouseover="phyugen_start()" >
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td style="padding:0px;width:25%;vertical-align:middle">
           <div class="one">
             <div class="two" id='phyugen_image'><video  width=100% height=100% muted autoplay loop>
             <source src="images/Phy-Ugen.png" type="video/mp4">
             Your browser does not support the video tag.
             </video></div>
-            <img src='images/Phy-Ugen.png' width="160">
+            <img src='images/Phy-Ugen.png' width="225">
           </div>
           <script type="text/javascript">
             function phyugen_start() {
@@ -177,7 +173,7 @@
      
       
       <tr onmouseout="lung_stop()" onmouseover="lung_start()">
-        <td style="padding:1px;width:25%;vertical-align:middle">
+        <td style="padding:1px;width:25%;vertical-align:top">
           <div class="one">
             <div class="two" id='lung_image'><video  width=100% height=100% muted autoplay loop>
             <source src="images/lung-video.mp4" type="video/mp4">
@@ -206,7 +202,7 @@
           John Galeotti,
           Howie Choset
           <br>
-          <em>ICRA, RAMI Workshop</em>, 2023 &nbsp <font color="red"></font>
+          <em>Presented in ICRA, RAMI Workshop'23 in London,UK</em> &nbsp <font color="red"></font>
           <br> 
           <a href="https://drive.google.com/file/d/1K9S1yj7EWMxqOtkpXD9W_HdqOe5CNKwx/view?usp=drive_link">poster</a>
           <p></p>
@@ -217,6 +213,122 @@
         </td>
       </tr>
 
+      <tr onmouseout="icam_stop()" onmouseover="icam_start()">
+        <td style="padding:1px;width:25%;vertical-align:top">
+          <div class="one">
+            <div class="two" id='icam_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/icam-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/icam-image.png' width="200">
+          </div>
+          <script type="text/javascript">
+            function icam_start() {
+              document.getElementById('icam_image').style.opacity = "1";
+            }
+
+            function icam_stop() {
+              document.getElementById('icam_image').style.opacity = "0";
+            }
+            icam_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9981860&tag=1">
+            <span class="papertitle">RGB-X Classification for Electronics Sorting</span>
+          </a> <strong>(In collaboration with Apple Inc.)</strong>
+          <br>
+          <strong>FNU Abhimanyu</strong>, Tejas Zodage, Umesh Thillaivasan, Xinyue Lai, Rahul Chakwate,
+          Javier Santillan, Emma Oti, Ming Zhao, Ralph Boirum Howie Choset, Matthew Travers
+          <br>
+          <em>Presented in IROS'23, Kyoto, Japan</em>. <a href="https://machinelearning.apple.com/research/rgb-x-classification">Featured on Apple Machine Learning Research</a>. &nbsp <font color="red"></font>
+          <br> 
+          <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9981860&tag=1">paper</a>
+          /
+          <a href="https://drive.google.com/file/d/1K9S1yj7EWMxqOtkpXD9W_HdqOe5CNKwx/view?usp=drive_link">video</a>
+          <p></p>
+          <p>
+          Use Unsupervised RAFT (U-RAFT) to track pixel-movements in lung-ultrasound images to cancel the movement and reconstruct the fixed image. 
+          Reduce the pixel movement by 76%.
+          </p>
+        </td>
+      </tr>
+
+
+      <tr onmouseout="BayesScanning_stop()" onmouseover="BayesScanning_start()">
+        <td style="padding:1px;width:25%;vertical-align:bottom">
+          <div class="one">
+            <div class="two" id='BayesScanning_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/BayesScanning-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/ultrasound-image.jpg' width="200">
+          </div>
+          <script type="text/javascript">
+            function BayesScanning_start() {
+              document.getElementById('BayesScanning_image').style.opacity = "1";
+            }
+
+            function BayesScanning_stop() {
+              document.getElementById('BayesScanning_image').style.opacity = "0";
+            }
+            BayesScanning_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://ieeexplore.ieee.org/abstract/document/9812410">
+            <span class="papertitle">Autonomous Ultrasound Scanning using Bayesian Optimization and Hybrid Force Control</span>
+          </a>
+          <br>
+          Raghavv Goel*, <strong>FNU Abhimanyu*</strong>, Kirtan Patel, John Galeotti, Howie Choset
+          <br>
+          <em>Presented in ICRA'22, Philadelphia, USA</em>. &nbsp <font color="red"></font>
+          <br> 
+          <a href="https://ieeexplore.ieee.org/abstract/document/9812410">paper</a>
+          /
+          <a href="https://youtu.be/UUu2GoAsP_Y">video</a>
+          <p></p>
+          <p>
+          We propose an automated pipeline .
+          </p>
+        </td>
+      </tr>
+
+      <tr onmouseout="three_d_defom_stop()" onmouseover="three_d_defom_start()">
+        <td style="padding:1px;width:25%;vertical-align:bottom">
+          <div class="one">
+            <div class="two" id='three_d_defom_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/three_d_defom-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/pc_undeformed.gif' width="200">
+          </div>
+          <script type="text/javascript">
+            function three_d_defom_start() {
+              document.getElementById('three_d_defom_image').style.opacity = "1";
+            }
+
+            function three_d_defom_stop() {
+              document.getElementById('three_d_defom_image').style.opacity = "0";
+            }
+            three_d_defom_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://www.notion.so/16-824-Project-Modeling-3D-Deformations-under-External-Force-from-2D-Images-a7a4f013af4f46bd871a983e2e37c3c5">
+            <span class="papertitle">Modeling 3D Deformations under External Force from 2D Images</span>
+          </a>
+          <br>
+          <strong>FNU Abhimanyu</strong>, Ananya Bal 
+          <br>
+          <em>Presented in 16-824, Visual Learning and Recognition by Prof. Deepak Pathak</em>. &nbsp <font color="red"></font>
+          <p></p>
+          <p>
+            Our pipeline learns deformation using 3D point clouds of the object deformation, material properties, force and its point of application and predicts a deformed version of the object. 
+            As we go from images to point clouds, our method uses 2D RGB images to learn 3D deformations.
+          </p>
+        </td>
+      </tr>
 
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
