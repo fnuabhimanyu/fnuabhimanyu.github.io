@@ -10,6 +10,17 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+    <style>
+      .collapsed {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 500px; /* Adjust as needed */
+      }
+      .expanded {
+          white-space: normal;
+      }
+  </style>
   </head>
 
   <body>
@@ -91,6 +102,82 @@
         </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <h2>Selected Projects</h2>
+
+            <tr onmouseout="rope_stop()" onmouseover="rope_start()">
+              <td style="padding:18px;width:25%;vertical-align:middle;border:10px">
+                <div class="one">
+                  <div class="two" id='rope_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="images/rope-video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/rope-image.png' width="180">
+                </div>
+                <script type="text/javascript">
+                  function rope_start() {
+                    document.getElementById('rope_image').style.opacity = "1";
+                  }
+      
+                  function rope_stop() {
+                    document.getElementById('rope_image').style.opacity = "0";
+                  }
+                  rope_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                  <span class="papertitle">Physics inspired rope manipulation</span>
+                <p>
+                  This research focuses on developing a sophisticated dynamics model for
+                   rope manipulation, building upon insights from my previous work on unsupervised
+                    deformable registration. In this current project, we aim to decode the intricate relationship between 
+                    specific actions (such as picking or placing) applied to a rope and the consequent shape changes it undergoes.
+                </p>
+              </td>
+            </tr>
+
+
+            <tr onmouseout="ms_thesis_stop()" onmouseover="ms_thesis_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ms_thesis_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="images/ms_thesis-image.gif" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src="images/ms_thesis-image.gif" width="190">
+                </div>
+                <script type="text/javascript">
+                  function ms_thesis_start() {
+                    document.getElementById('ms_thesis_image').style.opacity = "1";
+                  }
+      
+                  function ms_thesis_stop() {
+                    document.getElementById('ms_thesis_image').style.opacity = "0";
+                  }
+                  ms_thesis_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://drive.google.com/file/d/1B_6hQOjC0zzpp22pQlhd2aH15XpQE3aA/view?usp=drive_link">
+                  <span class="papertitle">Improving Robotic Ultrasound AI using Optical Flow</span>
+                </a>
+                <br>
+                <strong>FNU Abhimanyu</strong>,
+                Howie Choset
+                <br>
+                <em>Masters Thesis, CMU</em>, 2023 &nbsp <font color="red"></font>
+                <br> 
+                <a href="https://drive.google.com/file/d/1B_6hQOjC0zzpp22pQlhd2aH15XpQE3aA/view?usp=drive_link">Thesis</a>
+                /
+                <a href="https://docs.google.com/presentation/d/1wExHW-pm3pmJGQSOCDhgvmeXwVsCWunp/edit?usp=drive_link&ouid=110031651117655208843&rtpof=true&sd=true">Slides</a>
+                <p></p>
+                <p>
+                  My thesis introduces a robotic ultrasound system with minimal human 
+                  oversight, using an unsupervised method to estimate displacement fields
+                  in varying compression forces, aiding in realistic ultrasound image generation and
+                  enhanced vessel segmentation. This versatile approach proves effective in
+                  various medical scenarios, including respiratory motion cancellation and 
+                  curved needle registration, demonstrating broad applicability and improved image quality.
+                </p>
+            </tr>
     
       <tr onmouseout="uraft_stop()" onmouseover="uraft_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -158,7 +245,7 @@
           </script>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
-            <span class="papertitle">Phy-UGen: Simulating ultrasound image compression by using physics based NN <strong>[NOT PUPLISHED]</strong></span>
+            <span class="papertitle">Phy-UGen: Simulating ultrasound image compression by using physics based NN </strong></span>
           
           <br>
           <strong>FNU Abhimanyu</strong>,
@@ -293,14 +380,15 @@
           <a href="https://youtu.be/app2wJFWGrE">video</a>
           <p></p>
           <p>
-            RGB-
-            X, a multi-modal image classification approach, that utilizes
-            key features from external RGB images with those generated
-            from X-ray images to accurately classify electronic objects.
-            More specifically, this work develops Iterative Class Activation
-            Mapping (iCAM), a novel network architecture that explicitly
-            focuses on the finer-details in the multi-modal feature maps
-            that are needed for accurate electronic object classification.
+            We propose a one-shot image classification method featuring 
+            a novel data randomization approach. This method utilizes 3D 
+            point cloud reconstruction to render varied instances of 
+            smartphone models, enhancing dataset diversity. We employ 
+            cycle-GAN for style transfer between damaged and pristine 
+            phones. By using domain randomization, we expand our dataset 
+            500-fold, encompassing diverse scenarios such as cracks, 
+            colors, backgrounds, and lighting. This approach significantly
+             improves smartphone detection using YOLOv5.
           </p>
         </td>
       </tr>
@@ -397,5 +485,12 @@
         </td>
       </tr>
     </table>
+
+    <script>
+      function toggleText() {
+          var element = document.getElementById("thesisDescription");
+          element.classList.toggle("expanded");
+      }
+  </script>
   </body>
 </html>
