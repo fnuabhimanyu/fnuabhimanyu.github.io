@@ -1,0 +1,144 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.13.0" title="Shotcut version 22.12.21" producer="main_bin">
+  <profile description="automatic" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:00:04.880">
+    <property name="length">00:00:04.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:00:04.880"/>
+  </playlist>
+  <chain id="chain0" out="00:00:04.880">
+    <property name="length">00:00:04.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/BINOY/FNU_Website/fnuabhimanyu.github.io/images/ms_thesis-image.gif.gif</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="creation_time">2023-08-02T00:59:26</property>
+    <property name="shotcut:hash">4cbd8ca4d311ca180ca96a07387cef5e</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">ms_thesis-image.gif.gif</property>
+    <property name="xml">was here</property>
+    <filter id="filter0" out="00:00:04.880">
+      <property name="mlt_service">crop</property>
+      <property name="use_profile">1</property>
+      <property name="center">0</property>
+      <property name="center_bias">0</property>
+      <property name="top">0</property>
+      <property name="bottom">0</property>
+      <property name="left">0</property>
+      <property name="right">1032</property>
+    </filter>
+    <filter id="filter1" out="00:00:04.880">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-578.571 9.64286 1920 1080 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </chain>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="chain0" in="00:00:00.000" out="00:00:04.880"/>
+  </playlist>
+  <chain id="chain1" out="00:00:04.880">
+    <property name="length">00:00:04.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/BINOY/FNU_Website/fnuabhimanyu.github.io/images/ms_thesis-image.gif.gif</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="creation_time">2023-08-02T00:59:26</property>
+    <property name="shotcut:hash">4cbd8ca4d311ca180ca96a07387cef5e</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">ms_thesis-image.gif.gif</property>
+    <property name="xml">was here</property>
+    <filter id="filter2" out="00:00:04.880">
+      <property name="mlt_service">crop</property>
+      <property name="use_profile">1</property>
+      <property name="center">0</property>
+      <property name="center_bias">0</property>
+      <property name="top">568</property>
+      <property name="bottom">102</property>
+      <property name="left">957</property>
+      <property name="right">565</property>
+    </filter>
+    <filter id="filter3" out="00:00:04.880">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">390.214 8.67857 1920 1080 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+  </chain>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <entry producer="chain1" in="00:00:00.000" out="00:00:04.880"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 22.12.21" in="00:00:00.000" out="00:00:04.880">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <track producer="playlist1"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+  </tractor>
+</mlt>
